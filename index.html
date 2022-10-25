@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toy</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <noscript>Please enable javascript in your browser to play this game</noscript>
+
+    <div class="main" id="main">
+        <div class="header">
+            <h3>Enter player names to continue</h3>
+        </div>
+        <form>
+            <div class="player1">
+                <input id="player1" type="text" placeholder="player1">
+            </div>
+            <div class="player2">
+                <input id="player2" type="text" placeholder="player2">
+            </div>
+            <div class="btn">
+                <button type="reset" onclick="startGame()">play</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="game" id="game">
+        <div id="heading">
+            <h2 id="display">Game will start when player one takes it's move</h2>
+        </div> 
+
+        <h3 id="playerTurn"></h3>
+
+        <div class="gamePad">
+            <div class="gametable" id="gametable">
+                <input class="input" id="one" onclick="divOneClick()">
+                <input class="input" id="two" onclick="divTwoClick()">
+                <input class="input" id="three" onclick="divThreeClick()">
+                <input class="input" id="four" onclick="divFourClick()">
+                <input class="input" id="five" onclick="divFiveClick()">
+                <input class="input" id="six" onclick="divSixClick()">
+                <input class="input" id="seven" onclick="divSevenClick()">
+                <input class="input" id="eight" onclick="divEightClick()">
+                <input class="input" id="nine" onclick="divNineClick()">
+            </div>
+        </div>
+        <div id="display"></div>
+
+        <div class="btn">
+            <button type="reset" onclick="playAgain()">play again</button>
+            <button type="reset" onclick="resetGame()">reset</button>
+        </div>
+    </div>
+    
+</body>
+</html>

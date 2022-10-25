@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-image: linear-gradient(to right, blue,rgb(84, 20, 221),rgb(123, 0, 255),rgb(186, 47, 186), purple);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+    height: 100vh;
+    text-align: center;
+}
+
+.header{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header h3{
+    font-size: x-large;
+    font-weight: 800;
+    color: rgb(107, 255, 2);
+}
+.player1, .player2, .btn{
+    box-sizing: border-box;
+    margin: 30px;
+}
+
+input, button{
+    width: 250px;
+    padding: 5px;
+    border: 0;
+}
+input{
+    height: 20px;
+    border-radius: 5px;
+    background-color: rgba(234, 223, 210, 0.968);
+}
+button{
+    height: 30px;
+    background-color: rgb(255, 0, 106);
+    border-radius: 5px;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    color: white;
+}
+
+
+
+/* Game page */
+#game{
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+#game #heading{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+#game h2{
+    font-weight: 700;
+    color:rgb(107, 255, 2);
+}
+.gamePad{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
+.gametable{
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.gametable .input{
+    width: 130px;
+    height: 130px;
+    background-image: linear-gradient(to right, purple, rgb(236, 130, 238) ,rgb(245, 7, 209));
+    box-sizing: border-box;
+    font-size: 95px;
+    text-align: center;
+}
+#one, #two, #three{
+    border-bottom : 1px solid rgb(153, 23, 0); 
+}
+#three, #six, #nine{
+    border-left: 1px solid rgb(153, 23, 0);
+}
+#seven, #eight, #nine{
+    border-top: 1px solid rgb(153, 23, 0);
+}
+#one, #four, #seven{
+    border-right: 1px solid rgb(153, 23, 0);
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn button{
+    width: 180px;
+    margin: 20px;
+}
